@@ -2,6 +2,7 @@
 
 import React from "react";
 import { productsData } from "../datas/productsData";
+import Image from "next/image";
 
 export default function Gallery() {
   return (
@@ -14,7 +15,13 @@ export default function Gallery() {
               key={index}
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105 cursor-pointer"
             >
-                
+              <img className="w-full h-64 object-cover rounded-t-2xl" src={product.img} alt={product.title} />
+
+              <div className="p-6">
+                <h6 className="text-xl font-bold text-gray-900 mb-2">
+                    {product.title}
+                </h6>
+              </div>
             </div>
           ))}
         </div>
