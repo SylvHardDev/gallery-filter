@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import { productsData } from "../datas/productsData";
 // import Image from "next/image";
 
@@ -81,11 +81,20 @@ import { productsData } from "../datas/productsData";
 // ];
 
 export default function Gallery() {
+  const [activeFilter, setActiveFilter] = useState("tous");
+
+  const handleFilterChange = (filter: string) => {
+    setActiveFilter(filter);
+  };
+
   return (
     <section className="pt-20 px-4 sm:px-6 lg:px-8 bg-gray-900 min-h-screen">
       <h1 className="uppercase text-6xl font-black text-center text-white mb-8">
-        Filter <span className="text-pink-500">galery</span>{" "}
+        Filter <span className="text-pink-500">galery</span>
       </h1>
+
+      <div className="mb-12"></div>
+
       <div className="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {productsData.map((product, index) => (
           <div
