@@ -2,7 +2,83 @@
 
 import React from "react";
 import { productsData } from "../datas/productsData";
-import Image from "next/image";
+// import Image from "next/image";
+
+// type ImageProps = {
+//   img: string;
+//   alt: string;
+//   category: string;
+//   title: string;
+//   description: string;
+//   width: number;
+//   height: number;
+// };
+
+// const productsData = [
+//   {
+//     category: "jeans",
+//     img: "/public/imgs/jean-01.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "tshirt",
+//     img: "/public/imgs/tshirt-01.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "chaussures",
+//     img: "/public/imgs/shoes-01.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "jeans",
+//     img: "/public/imgs/jean-02.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "tshirt",
+//     img: "./imgs/tshirt-02.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "chaussures",
+//     img: "./imgs/shoes-02.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "jeans",
+//     img: "/public/imgs/jean-03.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "tshirt",
+//     img: "/public/imgs/tshirt-03.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+//   {
+//     category: "chaussures",
+//     img: "/public/imgs/shoes-03.jpg",
+//     title: "Nom de l'article",
+//     description:
+//       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, explicabo?",
+//   },
+// ];
 
 export default function Gallery() {
   return (
@@ -21,6 +97,13 @@ export default function Gallery() {
               src={product.img}
               alt={product.title}
             />
+            {/* <Image
+              className="w-full h-64 object-cover rounded-t-2xl"
+              src={product.img}
+              alt={product.title}
+              width={600}
+              height={600}
+            /> */}
 
             <div className="p-6">
               <h6 className="text-xl font-bold text-gray-900 mb-2">
