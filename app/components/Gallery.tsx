@@ -52,12 +52,14 @@ export default function Gallery() {
                 alt={product.title}
               /> */}
               <Image
-              className="w-full h-64 object-cover rounded-t-2xl"
-              src={product.img}
-              alt={product.title}
-              width={600}
-              height={600}
-            />
+                className="w-full h-64 object-cover rounded-t-2xl"
+                src={product.img}
+                alt={product.title}
+                width={600}
+                height={600}
+                priority
+                // placeholder="blur"
+              />
 
               <div className="p-6">
                 <h6 className="text-xl font-bold text-gray-900 mb-2">
